@@ -7,7 +7,6 @@
 ;----------------------------------------------------------;
     MODULE gc
 
-
 FUEL_THIEF_ACTIVE_LEV   = 4
 
 ;----------------------------------------------------------;
@@ -895,6 +894,7 @@ FredMoves
 ;----------------------------------------------------------;
 FredMovesUp
 
+    IFDEF PARALEX
     ; The #UpdateBackgroundOnFredMove calculates #bgOffset, which is used to hide the background line behind the horizon.
     ; To avoid glitches, like not hidden lines, we always have to first hide the line and then calculate the #bgOffset. This will introduce 
     ; a one pixel delay, but at the same time, it ensures that the previously hidden line will get repainted by direction change.
@@ -902,8 +902,9 @@ FredMovesUp
     LD A, (st.starsMode)
     OR A
     CALL NZ, bg.HideBackgroundBehindHorizon
-
     CALL bg.UpdateBackgroundOnFredMove
+    ENDIF
+
     CALL st.MoveStarsDown
 
     RET                                         ; ## END of the function ##
@@ -913,8 +914,11 @@ FredMovesUp
 ;----------------------------------------------------------;
 FredMovesDown
 
+    IFDEF PARALEX
     CALL bg.ShowBackgroundAboveHorizon
     CALL bg.UpdateBackgroundOnFredMove
+    ENDIF
+    
     CALL st.MoveStarsUp
 
     RET                                         ; ## END of the function ##

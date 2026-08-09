@@ -8,12 +8,13 @@
 ; Some documentation copied from https://wiki.specnext.dev
 
     ;DEFINE DEMO_MODE  1                          ; Demo release, level 1 -3.
+    DEFINE PARALEX 1                            ; Enable/disable parallex moving background
 
     IFDEF DEMO_MODE
-gameVersion             DB "V1.14 - DEMO"
+gameVersion             DB "V1.15 - DEMO"
 GAME_VERSION_SIZE       = 12
     ELSE
-gameVersion             DB "V1.14"
+gameVersion             DB "V1.15"
 GAME_VERSION_SIZE       = 5
     ENDIF 
 

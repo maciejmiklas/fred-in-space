@@ -9,7 +9,7 @@
    ; TO USE THIS MODULE: dbs.SetupCode1Bank
 
 VISIBILITY_LIMIT_1      = 140
-VISIBILITY_LIMIT_2      = 80
+VISIBILITY_LIMIT_2      = 60
 VISIBILITY_LIMIT_OFF    = 255
 
 visibilityLimit         DW VISIBILITY_LIMIT_OFF ; Current visiblity level.

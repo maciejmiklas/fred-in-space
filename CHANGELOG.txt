@@ -1,0 +1,15 @@
+v1.15
+ - Day lasts longer, reducing the number of transitions from day to night within a single level
+- On hard, the visibility during the night is reduced
+- Release without a parallax background image
+
+v1.14
+- Game renamed from Jetman in Space to Fred in Space
+- Save file renamed from jetman.sav to fred.sav
+- Darker images for menu and intro to improve text readability
+- Respawn Fred after dying on the rocket starting pod
+- Fixed corrupted sound when switching screens (exit to main menu, game over, start game)
+- Fade-out effect for switching images in menus and in game
+- New animation when Fred loses a life
+- New animation for game over
+- You can copy jemant.sav to the new game folder, just rename it to fred.sav

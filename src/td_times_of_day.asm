@@ -9,7 +9,7 @@
 
 TOD_STEPS_D4            = 4                     ; Total number of steps (times of the day) from day to night.
 TOD_STEP_DURATION_D30   = 30                    ; Duration of a single time of day, except for a full day.
-TOD_DAY_DURATION_D50    = 50                    ; Duration of the full day.
+TOD_DAY_DURATION_D50    = 150                   ; Duration of the full day.
 
 ; State for #stepDir indicating the direction of the change: from day to night, night to day, or full day.
 TOD_DIR_DAY_NIGHT_D1    = 1                     ; Environment changes from day to night.
