@@ -1,5 +1,5 @@
 v1.16
-- Improved compatybility with Calm Commander
+- Improved compatibility with Calm Commander
 
 v1.15
 - Day lasts longer, reducing the number of transitions from day to night within a single level
