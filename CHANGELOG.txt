@@ -1,5 +1,8 @@
+v1.16
+- Improved compatybility with Calm Commander
+
 v1.15
- - Day lasts longer, reducing the number of transitions from day to night within a single level
+- Day lasts longer, reducing the number of transitions from day to night within a single level
 - On hard, the visibility during the night is reduced
 - Release without a parallax background image
 

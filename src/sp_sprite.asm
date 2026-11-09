@@ -731,7 +731,13 @@ LoadSpritesFPGA
 
     CALL dbs.SetupSpritesBank
 
-    LD HL, SP_ADDR_HC000             ; RAM address containing sprite binary data.
+    ; Select pattern slot 0, DMA writes to port $5B start from the slot selected here. The value left there by
+    ; the launcher (e.g. CalmCommander) is not guaranteed to be 0.
+    LD BC, _SPR_PORT_H303B
+    XOR A
+    OUT (C), A
+
+    LD HL, SP_ADDR_HC000            ; RAM address containing sprite binary data.
     LD BC, SPR_BYT_D16384               ; Copy 63 sprites, each 16x16 pixels.
     
     ; ##########################################

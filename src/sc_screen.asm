@@ -62,6 +62,8 @@ SetupScreen
     
     NEXTREG _GL_REG_TRANP_COL_H14, _COL_BLACK_D0 ; Global transparency.
 
+    NEXTREG _SPR_REG_TRANSP_H4B, _SPR_TRANSP_DEF_HE3 ; Sprite transparency index, launcher might have changed default.
+
     NEXTREG _DC_REG_LA2_H70, %00'01'0000        ; Layer 2 320x256x8bpp, palette offset at 0.
 
     LD  A, _COL_BLACK_D0                        ; Set border color.

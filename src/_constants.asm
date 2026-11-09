@@ -11,10 +11,10 @@
     DEFINE PARALEX 1                            ; Enable/disable parallex moving background
 
     IFDEF DEMO_MODE
-gameVersion             DB "V1.15 - DEMO"
+gameVersion             DB "V1.16 - DEMO"
 GAME_VERSION_SIZE       = 12
     ELSE
-gameVersion             DB "V1.15"
+gameVersion             DB "V1.16"
 GAME_VERSION_SIZE       = 5
     ENDIF 
 
@@ -383,6 +383,10 @@ _SPR_ATR4_RELATIVE      = %01000000             ; Relative sprite.
 _SPR_REG_SETUP_H15      = $15
 
 _SPR_PORT_H303B         = $303B
+
+; Sprite transparency index (8-bit sprites: palette index, 4-bit sprites: lower 4 bits). Default $E3.
+_SPR_REG_TRANSP_H4B     = $4B
+_SPR_TRANSP_DEF_HE3     = $E3
 
 ;----------------------------------------------------------;
 ;                        Tiles                             ;
